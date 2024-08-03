@@ -44,7 +44,7 @@ export const Order = () => {
     window.location.replace(session_url);
     
   }else{
-    alert("Errro");
+    alert("Error");
   }
  }
 
