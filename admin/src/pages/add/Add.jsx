@@ -85,7 +85,7 @@ const Add = ({url}) => {
               </div>
               <div className="add-price flex-col">
                 <p>Product Price</p>
-                <input onChange={onChangehandler} value={data.price} type="Number" name='price' placeholder='$20' />
+                <input onChange={onChangehandler} value={data.price} type="Number" name='price' placeholder='₹20' />
               </div>
             </div>
               <button className='add-btn' type='submit'>Add</button>
