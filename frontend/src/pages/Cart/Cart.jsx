@@ -10,7 +10,7 @@ const navigate = useNavigate();
 
   return (
     <div className="cart">
-      <div key={cartItem._id}  className="cart-items">
+      <div   className="cart-items">
         <div className="cart-title">
           <p>Items</p>
           <p>Title</p>
@@ -45,17 +45,17 @@ const navigate = useNavigate();
           <div>
             <div className="cart-details">
               <p>SubTotal</p>
-              <p>${getSubTotal()}</p>
+              <p>₹{getSubTotal()}</p>
             </div>
             <hr />
             <div className="cart-details">
               <p>Delivery Fee</p>
-              <p>${getSubTotal()===0?0:2}</p>
+              <p>₹{getSubTotal()===0?0:2}</p>
             </div>
             <hr />
             <div className="cart-details">
               <p>Total</p>
-              <p>${getSubTotal()===0?0:getSubTotal() + 2}</p>
+              <p>₹{getSubTotal()===0?0:getSubTotal() + 2}</p>
             </div>
           </div>
             <button onClick={()=>navigate('/order')}>Proceed To Checkout</button>

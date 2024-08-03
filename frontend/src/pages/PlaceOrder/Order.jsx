@@ -44,7 +44,7 @@ export const Order = () => {
     window.location.replace(session_url);
     
   }else{
-    alert("error");
+    alert("Errro");
   }
  }
 
@@ -77,17 +77,17 @@ export const Order = () => {
           <div>
             <div className="cart-details">
               <p>SubTotal</p>
-              <p>${getSubTotal()}</p>
+              <p>₹{getSubTotal()}</p>
             </div>
             <hr />
             <div className="cart-details">
               <p>Delivery Fee</p>
-              <p>${getSubTotal()===0?0:2}</p>
+              <p>₹{getSubTotal()===0?0:2}</p>
             </div>
             <hr />
             <div className="cart-details">
               <p>Total</p>
-              <p>${getSubTotal()===0?0:getSubTotal() + 2}</p>
+              <p>₹{getSubTotal()===0?0:getSubTotal() + 2}</p>
             </div>
           </div>
           <button type="submit" >

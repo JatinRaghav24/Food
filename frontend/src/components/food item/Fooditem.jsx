@@ -2,11 +2,13 @@ import React, { useContext,  } from "react";
 import "./Fooditem.css";
 import { assets } from "../../assets/assets";
 import { StoreContext } from "../../context/Storecontext";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Fooditem = ({ id, name, price, description, image }) => {
 
   const{cartItem,addTocart,removeFromCart,url} = useContext(StoreContext);
+  const navigate = useNavigate();
+  
 
   return (
     <div className="food-item">
@@ -42,8 +44,8 @@ const Fooditem = ({ id, name, price, description, image }) => {
         </div>
         <p className="item-desc">{description}</p>
         <div className="cart-btn">
-        <p className="item-price">${price}</p>
-        <button onClick={Navigate('/order')}>Buy Now</button>
+        <p className="item-price">₹{price}</p>
+        <button onClick={()=>navigate('/order')}>Buy Now</button>
         </div>
         
       </div>

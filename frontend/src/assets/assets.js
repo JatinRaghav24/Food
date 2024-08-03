@@ -115,6 +115,10 @@ export const menu_list=[
     {
         menu_name: "Nodels",
         menu_image: menu_8
+    },
+    {
+        menu_name: "Pizza",
+        menu_image: menu_4
     }
 ]
 
@@ -379,4 +383,4 @@ export const food_list=[
     
 
 ]
-export const url = 'http://localhost:4000'
+export const url = 'https://food18-app-backend.onrender.com'
