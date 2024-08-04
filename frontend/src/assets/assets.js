@@ -383,4 +383,4 @@ export const food_list=[
     
 
 ]
-export const url = 'https://food18-app-backend.onrender.com'
+export const url = 'https://food18web.onrender.com'

@@ -26,7 +26,7 @@ const navigate = useNavigate();
             return (
               <div key={index}>
                 <div className="cart-title cart-it-it">
-                  <img src={url+"/images/"+item.image} alt="" />
+                  <img src={url+"/images/"+item.image} alt="" name='image' />
                   <p>{item.name}</p>
                   <p>${item.price}</p>
                   <p>{cartItem[item._id]}</p>

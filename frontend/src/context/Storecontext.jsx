@@ -4,8 +4,8 @@ export const StoreContext= createContext(null)
 
 const StoreContextProvider = (props)=>{
 
+    const url = "https://food18web.onrender.com";
     const [cartItem,setCartItem] = useState({});
-    const url = "https://food18web.onrender.com"
     const [token , setToken] = useState("");
     const [food_list,setFoodlist] = useState([]);
 
@@ -37,8 +37,10 @@ const StoreContextProvider = (props)=>{
         for (const item in cartItem) {
           if (cartItem[item] > 0) {
             let itemInfo = food_list.find((product) => product._id === item);
-                
-                totalAmount += itemInfo.price * cartItem[item];
+                if (itemInfo) {
+                    
+                    totalAmount += itemInfo.price * cartItem[item];
+                }
             
           }
         }
