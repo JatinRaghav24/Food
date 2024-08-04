@@ -28,9 +28,9 @@ const navigate = useNavigate();
                 <div className="cart-title cart-it-it">
                   <img src={url+"/images/"+item.image} alt="" name='image' />
                   <p>{item.name}</p>
-                  <p>${item.price}</p>
+                  <p>₹{item.price}</p>
                   <p>{cartItem[item._id]}</p>
-                  <p>${item.price * cartItem[item._id]}</p>
+                  <p>₹{item.price * cartItem[item._id]}</p>
                   <p onClick={()=>removeFromCart(item._id)} className="cross">X</p>
                 </div>
                 <hr />
