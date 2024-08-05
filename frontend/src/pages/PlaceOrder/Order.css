@@ -32,6 +32,11 @@
 .order-place .cart-total button{
     margin-top: 30px;
 }
+@media(max-width:600px){
+    .order-place{
+        flex-direction: column;
+    }
+}
 
 
 
